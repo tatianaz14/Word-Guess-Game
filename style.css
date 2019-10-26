@@ -1,0 +1,117 @@
+body{
+    background-color:white;
+    margin:0;
+    padding:0;
+}
+
+.header {
+
+	position: relative;
+	z-index: 1;
+}
+.headbackground {
+    position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: -3;
+        height: 200px;
+        width: 400px;
+        background-color:pink;
+        
+        
+    }
+    .headerimg {
+        position: absolute;
+     top: 0px;
+        left: 10%;
+        z-index: -2;
+        height: 200px;
+        width: 200px;
+        background-color: #e61c37;
+        
+        border-radius: 50%;
+        
+    
+    }
+
+   .headerimage{  position: absolute;
+    top: 0px;
+       left: 22%;
+       z-index: -1;
+       height: 200px;
+       width: 700px;
+       background-color:white;
+       
+
+   }
+                       
+               
+                      
+                        
+
+.header h1 {
+	
+	font-size: 70px;
+	letter-spacing: 6px;
+	font-family:'Modak', cursive;
+	z-index: 99;
+}
+.header p {
+    font-size: 60px;
+    letter-spacing: 2px;
+    color:  #FF595E;
+    font-family:'Modak', cursive;
+	text-shadow: white 2px 0px 0px, white 1.75517px 0.958851px 0px,white 1.0806px 1.68294px 0px, white 0.141474px 1.99499px 0px,white -0.832294px 1.81859px 0px, rgb(135, 229, 71) -1.60229px 1.19694px 0px, rgb(135, 229, 71) -1.97998px 0.28224px 0px, rgb(135, 229, 71) -1.87291px -0.701566px 0px, rgb(135, 229, 71) -1.30729px -1.5136px 0px, rgb(135, 229, 71) -0.421592px -1.95506px 0px, white 0.567324px -1.91785px 0px, white 1.41734px -1.41108px 0px, white 1.92034px -0.558831px 0px;
+	letter-spacing: 2px;
+	z-index: 99;
+}
+
+.column {
+    
+	padding-bottom: 30px;
+    background-color: #32383e;
+    
+}
+
+h2 {
+	padding: 35px 0px 15px 0px;
+}
+p {color:red;}
+
+.row {
+    border: 10px solid rgba(248,80,50,1);;
+    margin-bottom: 30px;
+    border-radius:5px;
+    
+	}
+.gameimg {
+	width: 50%;
+	margin: 30px;
+}
+
+h3 {
+	padding-bottom: 20px;
+}
+.column {
+    padding-bottom: 30px;
+    background-color:white;
+  
+    
+ 
+    
+}
+.logo {
+	width: 30%;
+}
+.btn {
+	margin-top: 20px;
+}
+.footer {
+	background-color: yellow;
+	color: #c8c8c8;
+	font-size: 10px;
+	height: 60px;
+	padding-top: 25px;
+}
+
+
