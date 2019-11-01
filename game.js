@@ -1,10 +1,10 @@
-var strangerThingsWord = ["eleven", "stranger things", "dustin", "indiana", "storm", "joe", "steve", "lovebird", "cockatiel", "kea", "parakeet", "lory", "kaka", "caique", "conure"];
+var iceCreamFlavor = ["vanilla", "chocolate", "rockyroad", "chocolatechip", "strawberry", "neopalitan", "coffee", "mint", "cookiedough", "cookiesandcream", "mango", "pistachio", "cottoncandy", "butterpecan", "moostetracks"];
 
 var wins=0;
 var losses=0;
 var guesses;
-var randomStrangerThings = strangerThingsWord[Math.floor(Math.random() * strangerThingsWord.length)].split("");
-console.log(randomStrangerThings);
+var randomIceCream = iceCreamFlavor[Math.floor(Math.random() * strangerThingsWord.length)].split("");
+console.log(randomIceCream);
 var hiddenWord;
 var wrongLetterChoice;
 
@@ -30,11 +30,11 @@ var resetGame = function(){
   //  losses = 0;
    guesses = 12;
    // Randomly chooses a choice from the options array. 
-   randomStrangerThings = strangerThingsWord[Math.floor(Math.random() * strangerThingsWord.length)].split("");
-   console.log(randomStrangerThings);
+   randomIceCream = iceCreamFlavor[Math.floor(Math.random() * iceCreamFlavor.length)].split("");
+   console.log(randomIceCream);
     hiddenWord = [];
     wrongLetterChoice = [];
-    for(var i = 0; i<randomStrangerThings.length; i++){
+    for(var i = 0; i<randomIceCream.length; i++){
       hiddenWord.push("_");
     }
 
@@ -64,18 +64,18 @@ document.onkeyup = function(event) {
 
 
 
-for(var j = 0; j<randomStrangerThings.length; j++){
-  if(randomStrangerThings[j] === userGuess && hiddenWord[j] === "_") {
+for(var j = 0; j<randomIceCream.length; j++){
+  if(randomIceCream[j] === userGuess && hiddenWord[j] === "_") {
     hiddenWord[j] = userGuess;
    
-    if (!randomStrangerThings.includes(userGuess)){
+    if (!randomIceCream.includes(userGuess)){
         guesses--
     }
     
     
   }
 
-  else if (!wrongLetterChoice.includes(userGuess) && !randomStrangerThings.includes(userGuess)) {
+  else if (!wrongLetterChoice.includes(userGuess) && !randomIceCream.includes(userGuess)) {
     wrongLetterChoice.push(userGuess);
     guesses--
   }
@@ -85,15 +85,15 @@ for(var j = 0; j<randomStrangerThings.length; j++){
     
 if (!hiddenWord.includes("_") && guesses>=0){
     wins++;
-    changeImage.src = "assets/images/winner.jpg";
-	changeGameStatus.innerHTML = "YOU'RE A WINNER";
+    changeImage.src = "assets/avataaars3.png";
+	changeGameStatus.innerHTML = "You're a winner!";
     resetGame();
   }
     
 else if (hiddenWord.includes("_") && guesses===0){
   losses++;
-  changeImage.src = "https://i.ytimg.com/vi/GgAyEcbxUFo/hqdefault.jpg";
-  changeGameStatus.innerHTML = "YOU'RE A loser";
+  changeImage.src = "assets/avataaars2.png";
+  changeGameStatus.innerHTML = "Bummer. Try Again!";
   resetGame();
 }
 
