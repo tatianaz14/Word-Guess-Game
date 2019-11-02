@@ -3,7 +3,7 @@ var iceCreamFlavor = ["vanilla", "chocolate", "rockyroad", "chocolatechip", "str
 var wins=0;
 var losses=0;
 var guesses;
-var randomIceCream = iceCreamFlavor[Math.floor(Math.random() * strangerThingsWord.length)].split("");
+var randomIceCream = iceCreamFlavor[Math.floor(Math.random() * iceCreamFlavor.length)].split("");
 console.log(randomIceCream);
 var hiddenWord;
 var wrongLetterChoice;
